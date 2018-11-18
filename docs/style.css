@@ -1,13 +1,5 @@
-html {
+html,header{
   font-family: 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;
-  -webkit-font-feature-settings: 'pkna';
-          font-feature-settings: 'pkna';
-  font-size: 17px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
 }
 p {
   text-indent: 1em;
@@ -18,10 +10,18 @@ ruby {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 }
 
-header,
+
 section {
   margin-left: 30px;
   margin-right: 30px;
+  -webkit-font-feature-settings: 'pkna';
+          font-feature-settings: 'pkna';
+  font-size: 17px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
 }
 
 table.border {
@@ -33,4 +33,29 @@ table.border th,
 table.border td {
   border-bottom: 2px solid #ccc;
   border-left: 2px solid #ccc;
+}
+
+
+.box {
+  text-align: center;
+}
+
+.exp {
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -ms-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  -ms-column-gap: 1rem;
+  column-gap: 1rem;
+  column-rule: solid 1px #ccc;
+  display: inline-block;
+  text-align: left;
+  width: 90vw;
 }
