@@ -1,6 +1,11 @@
 html,header{
   font-family: 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;
 }
+
+
+
+
+
 p {
   text-indent: 1em;
   margin-left: 15px;
@@ -10,7 +15,7 @@ ruby {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 }
 
-
+/*****SECTION*****/
 section {
   margin-left: 30px;
   margin-right: 30px;
@@ -22,6 +27,25 @@ section {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+}
+section a{
+    color:steelblue;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+section a:visited{
+    color:steelblue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+section a:hover {
+    color: #F5A862;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 table.border {
@@ -46,10 +70,10 @@ table.border td {
   -ms-writing-mode: tb-rl;
   -ms-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  -ms-column-count: 2;
-  column-count: 2;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -ms-column-count: 1;
+  column-count: 1;
   -webkit-column-gap: 1rem;
   -moz-column-gap: 1rem;
   -ms-column-gap: 1rem;
@@ -58,4 +82,25 @@ table.border td {
   display: inline-block;
   text-align: left;
   width: 90vw;
+  background-color: #ffa
+}
+
+/***縦書き試行錯誤***/
+.wrapper{
+  width: 90vw;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -ms-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -ms-column-count: 1;
+  column-count: 1;
+  column-rule: solid 1px #ccc;
+  column-gap: 2.5rem;
 }
