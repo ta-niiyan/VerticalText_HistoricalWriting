@@ -104,3 +104,15 @@ table.border td {
   column-rule: solid 1px #ccc;
   column-gap: 2.5rem;
 }
+
+.fixed {
+  /* 参考：https://saruwakakun.com/html-css/basic/relative-absolute-fixed */
+  position: fixed;
+       bottom: 20px;
+       right: 20px;
+       /*以下装飾*/
+       color: white;
+       background: #74c1f8;
+       padding:0 2px;
+       line-height:1.5em;
+}
