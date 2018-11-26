@@ -2,10 +2,6 @@ html,header{
   font-family: 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;
 }
 
-
-
-
-
 p {
   text-indent: 1em;
   margin-left: 15px;
@@ -105,11 +101,12 @@ table.border td {
   column-gap: 2.5rem;
 }
 
+/** 文章量を表示して下までスクロールしてもらえるように　**/
 .fixed {
   /* 参考：https://saruwakakun.com/html-css/basic/relative-absolute-fixed */
   position: fixed;
-       bottom: 20px;
-       right: 20px;
+       bottom: 60px;
+       right: 30px;
        /*以下装飾*/
        color: white;
        background: #74c1f8;
