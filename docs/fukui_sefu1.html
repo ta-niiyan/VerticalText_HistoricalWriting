@@ -8,21 +8,17 @@
 <link rel="stylesheet" href="css/vertical-style.css">
 <title>拾録　越前世譜　茂昭様御代　データセット</title>
 </head>
+
+
 <body>
 
-
-<div class="section" id="metadata">
-  <p>本拾録は、福井県文書館が「幕末福井関連資料データ」において提供している翻刻データを縦書きCSSを用いて試験しているウェブサイトです。データの概要や凡例については、出典元である福井県文書館ウェブサイトにてご確認ください。なお、対応ブラウザ検証などは一切していませんのであしからず。<br>
-  <a href="http://www.archives.pref.fukui.jp/fukui/05/2018sefu.html#riyou">出典：「越前世譜　茂昭様御代データセット」（福井県文書館） CC BY 4.0</a></p>
-  <br>
-    越前世譜　茂昭様御代　上（1）<br>
-    1858年（安政5）7月5日～9月30日<br>
-</div>
-
+  <div class="section" id="metadata">
+      越前世譜　茂昭様御代　上（1）<br>
+      1858年（安政5）7月5日～9月30日<br>
+    </div>
 
   <div class="fixed">
-    Volume # %
-    <script><input id"scrollY" type="text" readonly="readonly"></script>
+    <div id="result"></div>
   </div>
 
 <div class="wrapper">
@@ -2472,12 +2468,42 @@
 <p>
 </div>
 
+<footer class="site-footer">
+  <p>本拾録は、福井県文書館が「幕末福井関連資料データ」において提供している翻刻データを縦書きCSSを用いて試験しているウェブサイトです。データの概要や凡例については、出典元である福井県文書館ウェブサイトにてご確認ください。なお、対応ブラウザ検証などは一切していませんのであしからず。<br>
+  <a href="http://www.archives.pref.fukui.jp/fukui/05/2018sefu.html#riyou">出典：「越前世譜　茂昭様御代データセット」（福井県文書館） CC BY 4.0</a></p>
+</footer>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-116362164-1');
 </script>
-<script type="text/javascript" src="js/scroll_value.js"></script>
+
+<script>
+console.log( window ) ;
+
+addEventListener( "scroll", getInfo ) ;
+
+getInfo() ;
+
+function getInfo () {
+  scroolValue = scrollY / (document.body.clientHeight - window.innerHeight) * 100;
+  scroolValue = Math.round(scroolValue*10)/10;
+
+	document.getElementById( "result" ).textContent = "" ;
+
+//	appendText( "Height" + document.body.clientHeight + "\n" ) ;
+//	appendText( "scrollY: " + scrollY + "\n" ) ;
+//	appendText( "pageYOffset: " + pageYOffset + "\n" ) ;
+//	appendText( "window: " + window.innerHeight + "\n" ) ;
+	appendText( scroolValue + "/100あたりを閲覧中\n" ) ;
+}
+
+function appendText ( text ) {
+	document.getElementById( "result" ).appendChild( document.createTextNode( text ) ) ;
+}
+</script>
+<!-- <script type="text/javascript" src="js/scroll_value.js"></script> -->
 </body>
 </html>

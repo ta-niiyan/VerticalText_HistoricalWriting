@@ -1,5 +1,19 @@
-html,header{
+html,header,footer{
   font-family: 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;
+}
+
+
+.site-footer{
+  background: #fff;
+  border-top: solid 1px #ccc;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  margin-top: 10px;
+  padding-top: 10px;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
 }
 
 p {
@@ -105,7 +119,7 @@ table.border td {
 .fixed {
   /* 参考：https://saruwakakun.com/html-css/basic/relative-absolute-fixed */
   position: fixed;
-       bottom: 60px;
+       bottom: 80px;
        right: 30px;
        /*以下装飾*/
        color: white;
