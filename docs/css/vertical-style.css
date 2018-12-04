@@ -1,10 +1,20 @@
-html,header{
+html,header,footer{
   font-family: 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;
 }
 
 
-
-
+.site-footer{
+  background: #fff;
+  border-top: solid 1px #ccc;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  margin-top: 10px;
+  padding-top: 10px;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+}
 
 p {
   text-indent: 1em;
@@ -103,4 +113,17 @@ table.border td {
   column-count: 1;
   column-rule: solid 1px #ccc;
   column-gap: 2.5rem;
+}
+
+/** 文章量を表示して下までスクロールしてもらえるように　**/
+.fixed {
+  /* 参考：https://saruwakakun.com/html-css/basic/relative-absolute-fixed */
+  position: fixed;
+       bottom: 80px;
+       right: 30px;
+       /*以下装飾*/
+       color: white;
+       background: #74c1f8;
+       padding:0 2px;
+       line-height:1.5em;
 }
